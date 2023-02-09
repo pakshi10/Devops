@@ -1,0 +1,52 @@
+#First YAML
+#String
+myself : Akshay Kumar
+job : 'Computer Vision Engineer'
+company : "EarthSense"
+
+#Multiple line
+bio: |
+Name is Akshay Kumar
+Intrested in AI stuff
+
+message : >
+This is
+a
+multiple line
+code
+
+#interges,float,boolean
+number : 77
+marks : 80.33
+booleandValue : No #n,N,false,False,FALSE
+#same for true -> yes,Y,y,True,TRUE
+
+#specify a type int
+zer0: !!int 0
+binaryNum : !!int 0b11001
+
+#floating point numbers
+marks: !!float 56.09
+# !!str,!!bool
+
+#not a num
+not a num: nan
+
+#list
+- mango
+- apple
+- banana
+
+country:
+  - India
+  - USA
+  - Russia
+
+#I like this representation beause it looks similar to list implementation in Python and no indendention required
+country : [India,USA,Russia]
+---
+{name:"Akshay",class:10}
+
+#dates and time
+date : !!timestamp 2023-02-09
+

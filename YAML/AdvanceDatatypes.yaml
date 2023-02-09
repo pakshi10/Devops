@@ -1,0 +1,59 @@
+student : !!seq
+  - marks
+  - name
+  - roll_no
+
+#some of the keys of the seq will be empty
+#sparse 
+sparse seq:
+  - hey
+  - how
+  -
+  - Null
+  - sup
+
+#nested sequence
+-
+ - mango
+ - apple
+ - banana
+- 
+ - marks
+ - roll num
+ - class
+
+
+#key : value pairs are called maps
+!!map
+
+#nested mappings: map with an map
+field: computer science
+roles:
+  1: Software Developer
+  2 : Data Analyst
+
+
+#pairs:keys may have duplicate values
+# !!pairs
+
+pair example: !!pairs
+  - job : CV
+  - job : student
+
+#same as
+pair example : !!pairs [job: CV,job: teacher]
+
+# !!set will have unique values just like python
+
+# dictionary !!omap
+people: !!omap
+  - Akshay:
+      name : Akshay Kumar
+      age : 26
+      height : 170
+  - Akash :
+      name: Akash Patil
+      age : 26
+      height : 178
+      
+
